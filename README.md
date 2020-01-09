@@ -9,5 +9,5 @@
 
 # Login Credentials
 
-username: admins
-password: 123
+- username: admins
+- password: 123
