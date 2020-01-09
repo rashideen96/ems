@@ -1,5 +1,5 @@
 # Employee Management System
-## Just a simple system to manage an employee
+ Just a simple system to manage an employee
 
 # Installation
 
@@ -9,5 +9,5 @@
 
 # Login Credentials
 
-- username: admins
-- password: 123
+username: admins
+password: 123
