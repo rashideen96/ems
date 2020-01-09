@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2019 at 10:18 PM
+-- Generation Time: Jan 01, 2020 at 03:55 AM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 5.6.34
 
@@ -32,6 +32,8 @@ CREATE TABLE `employees` (
   `id` int(11) NOT NULL,
   `fullname` varchar(255) NOT NULL,
   `ic_no` varchar(14) NOT NULL,
+  `dob` varchar(12) NOT NULL,
+  `joined_date` varchar(12) NOT NULL,
   `email` varchar(50) NOT NULL,
   `phone_no` varchar(50) NOT NULL,
   `gender` varchar(6) NOT NULL,
@@ -46,9 +48,10 @@ CREATE TABLE `employees` (
 -- Dumping data for table `employees`
 --
 
-INSERT INTO `employees` (`id`, `fullname`, `ic_no`, `email`, `phone_no`, `gender`, `status`, `address1`, `address2`, `img`, `created_date`) VALUES
-(2, 'wwwwwwwwwwwwwww', '34234324234234', 'funstudy10@gmail.com', '0122236788', 'male', 'married', 'fdfsdfsdfsdfsdfsdf', 'address222222222222222222222', 'images.png', '2020-01-01 05:08:09'),
-(3, 'mirul', '20938302283002', 'amirulnajihin304@gmail.com', '0122236788', 'female', 'single', 'qqqqqqqqqqqqqqqqqqqqqqqq', 'qqqqqqqqqqqqqqqqqqqqqqq', 'cute-anime-boy-hoodie.jpg', '2020-01-01 04:31:25');
+INSERT INTO `employees` (`id`, `fullname`, `ic_no`, `dob`, `joined_date`, `email`, `phone_no`, `gender`, `status`, `address1`, `address2`, `img`, `created_date`) VALUES
+(2, 'wwwwwwwwwwwwwww', '34234324234234', '', '', 'funstudy10@gmail.com', '0122236788', 'male', 'married', 'fdfsdfsdfsdfsdfsdf', 'address222222222222222222222', 'images.png', '2020-01-01 05:08:09'),
+(3, 'mirul', '20938302283002', '', '', 'amirulnajihin304@gmail.com', '0122236788', 'female', 'single', 'qqqqqqqqqqqqqqqqqqqqqqqq', 'qqqqqqqqqqqqqqqqqqqqqqq', 'cute-anime-boy-hoodie.jpg', '2020-01-01 04:31:25'),
+(4, 'test123', '556667788', '14/01/2004', '02/01/2020', 'funstudy10@gmail.com', '0122236788', 'male', 'single', 'fgbvcccccccccccccccccc', 'cvbbbbbbbbbbbbbbbbbbb', '9izokrL9T.gif', '2020-01-01 10:53:05');
 
 -- --------------------------------------------------------
 
@@ -96,7 +99,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
