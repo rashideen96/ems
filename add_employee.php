@@ -51,11 +51,11 @@ if (!$_SESSION['user']) {
 	    			</div>
 	    			<div class="form-group">
 	    				<label>Date of Birth</label>
-	    				<input type="text" id="datepicker" name="dob" class="form-control form-control-sm rounded-0">
+	    				<input type="text" id="datepicker" name="dob" class="form-control form-control-sm rounded-0" autocomplete="off">
 	    			</div>
 	    			<div class="form-group">
 	    				<label>Joined Date</label>
-	    				<input type="text" id="datepicker2" name="joined_date" class="form-control form-control-sm rounded-0">
+	    				<input type="text" id="datepicker2" name="joined_date" class="form-control form-control-sm rounded-0" autocomplete="off">
 	    			</div>
 	    			<div class="form-group">
 	    				<label>Email</label>
