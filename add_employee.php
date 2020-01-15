@@ -17,6 +17,7 @@ if (!$_SESSION['user']) {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
 
 
 
@@ -86,11 +87,11 @@ if (!$_SESSION['user']) {
 	    			</div>
 					<div class="form-group">
 						<label>Address 1</label>
-						<textarea class="form-control form-control-sm rounded-0" name="address1" rows="5"></textarea>
+						<textarea class="form-control form-control-sm rounded-0" name="address1" rows="10" id="summernote"></textarea>
 					</div>
 					<div class="form-group">
 						<label>Address 2</label>
-						<textarea class="form-control form-control-sm rounded-0" name="address2" rows="5"></textarea>
+						<textarea class="form-control form-control-sm rounded-0" name="address2" rows="10" id="summernote2"></textarea>
 					</div>
 					<div class="row">
 						<div class="col-lg-4">
@@ -116,7 +117,8 @@ if (!$_SESSION['user']) {
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
+
   </body>
   <script>
   	 function readURL(input, imageSelector) {
@@ -137,6 +139,9 @@ if (!$_SESSION['user']) {
     }
 
     $(document).ready(function(){
+
+    	$('#summernote').summernote();
+    	$('#summernote2').summernote();
 
     	$( "#datepicker" ).datepicker({
     		changeMonth: true,
